@@ -1,0 +1,100 @@
+/* FILEPATH: /c:/Users/shuju/OneDrive/Desktop/SI 539/ccp_starter_code-main/navbar.css */
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-element {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#D7C4BB;
+    margin:0;
+    padding: 5px;
+    line-height: normal;
+  }
+h1{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color:rgb(2, 2, 26);
+  font-size: xx-large;
+}
+  h2{
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color:rgb(2, 2, 26);
+  font-size: large;
+
+}
+h3 {
+  font-weight: bold;
+  color:blue
+}
+
+header {
+    background-color: #d59019;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number 4 for the number of items */
+    grid-gap: 20px; /* Adjust spacing between items */
+    padding: 0;
+    justify-content: center; /* Center the items horizontally */
+  }
+nav ul li {
+    padding: 2px;
+    text-align: center;
+    background-color: bisque;
+  }
+  a:link, a:visited {
+    color: #000;
+  }
+  a.current:link, a.current:visited {
+    color: white;
+    background-color: blue;
+    font-style: italic;
+  }
+  nav ul li a {
+    padding: 5px;
+    display: block;
+  }
+  .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    border: dashed 4px #d59019; /* Add a border around the gallery */
+    gap: 10px; /* Adjust the space between items */
+    padding: 10px;
+    background-color: antiquewhite;
+  }
+  
+  .photo-gallery img, .photo-gallery video {
+    width: 100%; /* Make images and videos responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+    color: blueviolet;
+  }
